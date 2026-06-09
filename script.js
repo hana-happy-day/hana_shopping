@@ -9,6 +9,11 @@ aromaButton.addEventListener("click", () => {
     );
 
 });
+
+// 合計金額
+let total = 0;
+const totalPrice = document.querySelector("#total-price");
+
 const buttons = document.querySelectorAll(".add-btn");
 
 buttons.forEach(button => {
@@ -20,14 +25,40 @@ buttons.forEach(button => {
             return;
         }
 
+        // ====================
+        // 金額加算
+        // ====================
+
+        const card = button.closest(".product-card");
+
+        const priceText =
+            card.querySelector(".price").textContent;
+
+        let price = Number(
+            priceText
+                .replace("¥", "")
+                .replace(/,/g, "")
+        );
+
+        // アロマバンドだけ4個分
+        if (button.classList.contains("aroma-btn")) {
+            price = price * 4;
+        }
+
+        total += price;
+
+        totalPrice.textContent =
+            `¥${total.toLocaleString()}`;
+
+        // ====================
         // ボタン変更
+        // ====================
+
         button.textContent = "追加済";
         button.classList.add("added");
 
         // アロマバンドだけ特別処理
         if (button.classList.contains("aroma-btn")) {
-
-            const card = button.closest(".product-card");
 
             const message = document.createElement("p");
 
@@ -36,6 +67,19 @@ buttons.forEach(button => {
 
             card.appendChild(message);
         }
+
+        // スピードドライヤーの処理
+        if (button.classList.contains("speed-btn")) {
+
+            const message = document.createElement("p");
+
+            message.classList.add("message");
+            message.textContent =
+                "水筒に使えそうだったら欲しい！\n軽すぎて使えなさそうならいらないよ";
+
+            card.appendChild(message);
+        }
+
     });
 
 });
