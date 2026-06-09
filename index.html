@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おつかいリスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- 店舗情報 -->
+        <section class="store-info">
+
+            <h1>
+                3COINS<br>
+                <span>+plus 新さっぽろサンピアザ店</span>
+            </h1>
+
+            <p class="address">
+                北海道札幌市厚別区厚別中央2条5丁目7番
+                サンピアザB1F
+            </p>
+
+            <img src="pic/map.png" alt="店舗地図" class="map-image">
+
+        </section>
+
+        <!-- 買い物リスト -->
+        <section class="shopping-section">
+
+            <h2>買い物リスト</h2>
+
+            <div id="product-list" class="product-grid">
+
+                <!-- 商品カードサンプル -->
+
+                <article class="product-card">
+
+                    <img src="pic/hanatoy.jpg" alt="フード回転トイ">
+
+                    <h3 class="product-name">
+                        フード回転トイ
+                    </h3>
+
+                    <p class="price">
+                        ¥1,650
+                    </p>
+
+                    <button class="add-btn">
+                        追加
+                    </button>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img src="pic/botl.jpg" alt="オープンスピーディーボトルドライヤー">
+
+                    <h3 class="product-name">
+                        オープンスピーディーボトルドライヤー
+                    </h3>
+
+                    <p class="price">
+                        ¥660
+                    </p>
+
+                    <button class="add-btn">
+                        追加
+                    </button>
+                </article>
+                    <article class="product-card important-item">
+
+                        <img src="pic/churip.png" alt="2WAYアロマバンド">
+
+                        <h3 class="product-name">
+                            2WAYアロマバンド
+                        </h3>
+
+                        <p class="need-count">
+                            ★ 4個欲しい ★
+                        </p>
+
+                        <p>
+                            お花がなかったら違うのでもOK
+                        </p>
+
+                        <p class="price">
+                            ¥330
+                        </p>
+
+                        <button class="add-btn aroma-btn">
+                            追加
+                        </button>
+                    </article>
+                    <article class="product-card">
+
+                        <img src="pic/rice_mag.jpg" alt="一人炊き用炊飯マグ／KITINTO">
+
+                        <h3 class="product-name">
+                            一人炊き用炊飯マグ／KITINTO
+                        </h3>
+
+                        <p class="price">
+                            ¥550
+                        </p>
+
+                        <button class="add-btn">
+                            追加
+                        </button>
+
+                    </article>
+                    <article class="product-card">
+
+                        <img src="pic/pieler.jpg" alt="多機能ピーラーセット／KITINTO">
+
+                        <h3 class="product-name">
+                            多機能ピーラーセット／KITINTO
+                        </h3>
+                        <p>ほかにも種類があるみたいなので、<br>
+                            使いやすそうな物を選んでね！</p>
+
+                        <p class="price">
+                            ¥550
+                        </p>
+
+
+
+                        <button class="add-btn">
+                            追加
+                        </button>
+
+                    </article>
+                    <article class="product-card important-item">
+
+                        <img src="pic/moble.jpg" alt="モバイル三脚">
+
+                        <h3 class="product-name">
+                            モバイル三脚
+                        </h3>
+
+                        
+
+                        
+
+                        <p class="price">
+                            ¥330
+                        </p>
+
+                        <button class="add-btn aroma-btn">
+                            追加
+                        </button>
+                    </article>
+
+                    <article class="product-card">
+
+                        <img src="pic/poch.jpg" alt="大容量スリムポーチ／and us
+">
+
+                        <h3 class="product-name">
+                            大容量スリムポーチ／and us
+
+                        </h3>
+
+                        <p class="price">
+                            ¥880
+                        </p>
+
+                        <button class="add-btn">
+                            追加
+                        </button>
+
+                    </article>
+                    <article class="product-card">
+
+                        <img src="pic/oil.jpg" alt="オイルスプレー">
+
+                        <h3 class="product-name">
+                            オイルスプレー
+                        </h3>
+                        <p>在庫不明なのでないかも！！</p>
+
+                        <p class="price">
+                            ¥550
+                        </p>
+
+
+
+                        <button class="add-btn">
+                            追加
+                        </button>
+
+                    </article>
+
+            </div>
+
+        </section>
+
+        <!-- 合計 -->
+        <section class="total-card">
+
+            <span>合計金額</span>
+
+            <span id="total-price">
+                ¥6,490
+            </span>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
