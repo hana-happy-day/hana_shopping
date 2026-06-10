@@ -188,11 +188,16 @@ body {
         font-size: 1.6rem;
     }
 }
-.hr2 {
-  border-top: 5px dotted #000; /* 点線 */
-}
 
 #unb {
     text-align: center;
     color: #925a70;
+    margin-top: 1px;
+}
+.hr2 {
+  border-top: 5px dotted #000; /* 点線 */
+}
+#umbh2 {
+    margin-bottom: 1px;
+    margin-top: 40px;
 }
