@@ -188,6 +188,9 @@ body {
         font-size: 1.6rem;
     }
 }
+.hr2 {
+  border-top: 5px dotted #000; /* 点線 */
+}
 
 #unb {
     text-align: center;
